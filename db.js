@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 const databaseUrl = process.env.DATABASE_URL || 'postgres://postgres:fullstacklabs@localhost:5432/postgres'; 
-const db = new Sequelize();
+const db = new Sequelize(databaseUrl);
 
 function onSync () {
   console.log('Database works!')
