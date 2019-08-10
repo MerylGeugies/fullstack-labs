@@ -1,5 +1,5 @@
 const express = require('express');
-const router = require('./advertisment/router');
+const router = require('./advertisement/router');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
