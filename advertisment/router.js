@@ -33,7 +33,7 @@ function deleteAd(request, response, next) {
     .catch(next)
 }
 
-router.get('/', adsList)
+router.get('/advertisement', adsList)
 router.post('/advertisement', createAds)
 router.put('/advertisement/:id', updateAd)
 router.delete('/advertisement/:id', deleteAd)
